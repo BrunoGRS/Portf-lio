@@ -90,7 +90,11 @@ li{
 
 .bar{
 <<<<<<< HEAD
+<<<<<<< HEAD
     background: linear-gradient(to right, #f3f3f2, #f1ecf3 );
+=======
+    background: linear-gradient(to right, #f3f3f2, #9312ba );
+>>>>>>> 1af0d894a01178bc633ea9672546d1d42dfa065b
 =======
     background: linear-gradient(to right, #f3f3f2, #9312ba );
 >>>>>>> 1af0d894a01178bc633ea9672546d1d42dfa065b
@@ -351,6 +355,7 @@ li{
 }
 .javascript{
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 78%;
     animation: js 2s;
 
@@ -358,12 +363,17 @@ li{
 .python{
     width: 70%;
 =======
+=======
+>>>>>>> 1af0d894a01178bc633ea9672546d1d42dfa065b
     width: 56%;
     animation: js 2s;
 
 }
 .php{
     width: 60%;
+<<<<<<< HEAD
+>>>>>>> 1af0d894a01178bc633ea9672546d1d42dfa065b
+=======
 >>>>>>> 1af0d894a01178bc633ea9672546d1d42dfa065b
     animation: php 2s;
 }
