@@ -1,213 +1,398 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="js/jquery-3.4.1.min.js" ></script>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/main.css">
+    <meta name="description" content="Bruno Rodrigues — Consultor de Projetos SaaS, Desenvolvedor Web Full-Stack e Professor de Informática em Chapecó-SC.">
+    <title>Bruno Rodrigues | Consultoria SaaS, Desenvolvimento & Tecnologia</title>
+
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/68b14a1fa5.js"></script>
-    <meta name="description" content="Bruno Rodrigues desenvolvimento de sites para empresas, criação de sites Videira-SC">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Anton|Bree+Serif|Dancing+Script|Indie+Flower|Pacifico|Saira+Stencil+One|Satisfy|Shadows+Into+Light&display=swap" rel="stylesheet">
-    <title>Bruno Rodrigues</title>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="menu-toggler">
-            <div class="bar half start"></div>
-            <div class="bar"></div>
-            <div class="bar half end"></div>
-        </div>
-        <nav class="top-nav">
-            <ul class="nav-list">
-                <li>
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li>
-                    <a href="#about" class="nav-link">Sobre</a>
-                </li>
-                <li>
-                    <a href="#services" class="nav-link">Serviços</a>
-                </li>
-                <li>
-                    <a href="#portfolio" class="nav-link">Portfólio</a>
-                </li>
-                <li>
-                    <a href="#experience" class="nav-link">Experiencia</a>
-                </li>
-                <li>
-                    <a href="#contact" class="nav-link">Contato</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="landing-text">
-            <h1>Bruno Rodrigues</h1>
-            <h6>Desenvolvedor Web Back-end</h6>
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="brand">
+                <span class="brand-dot"></span>
+                <span>Bruno Rodrigues</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Início</a></li>
+                    <li><a href="#about" class="nav-link">Sobre</a></li>
+                    <li><a href="#services" class="nav-link">Atuação</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfólio</a></li>
+                    <li><a href="#stack" class="nav-link">Competências</a></li>
+                    <li><a href="#contact" class="nav-link nav-cta">Contato</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <section class="about" id="about">
-        <div class="container">
-            <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
-                <img src="img/profile.jpg" alt="">
-            </div>
-            <div class="about-details" data-aos="fade-left" data-aos-delay="600">
-                <div class="about-heading">
-                    <h1>Sobre</h1>
-                    <h6>Mim</h6>
-                </div>
-                <p>Cursando Análise e Desenvolvimento de Sistemas no Instituto Federal Catarinense, sou um entusiasta do desenvolvimento web back-end, apaixonado pela área e em constante busca por aprimoramento. Meu foco atual de estudo e aperfeiçoamento concentra-se no universo do NodeJS e suas diversas dependências para o desenvolvimento back-end. Conto com experiência sólida em ambas as frentes do desenvolvimento web, tanto no front-end quanto no back-end, e estou comprometido em expandir continuamente meu conhecimento e experiência na área.                </p>
-                <div class="social-media">
-                    <ul class="nav-list">
-                        <li>
-                            <a href="https://github.com/BrunoGRS" class="icon-link">
-                                <i class="fab fa-github-square"></i>
-                            </a>
-                        </li>
-        
-                    </ul>
-                </div>
-            </div>
-           
-        </div>
-    </section>
-    <section class="services" id="services">
-        <div class="container">
-            <div class="section-heading">
-                <h1>Serviços</h1>
-                <h6>O que eu posso fazer por voce hoje?</h6>
-            </div>
-            <div class="my-skills">
-                
-                <div class="skill" data-aos="fade-in" data-aos-delay="300">
-                    <div class="icon-container">
-                        <i class="fa fa-code"></i>
-                    </div>
-                    <h1>Websites</h1>
-                    <p>Criação e hospedagem de sites responsivos para apresentação de empresas e produtos.
-                    </p>
-                </div>
-                <div class="skill" data-aos="fade-in" data-aos-delay="900"> 
-                    <div class="icon-container">
-                        <i class="fas fa-network-wired"></i>
-                    </div>
-                    <h1>softwares para empresas</h1>
-                    <p>Criação de Softwares para facilitar a gestão da sua empresa.
-                        
-                    </p>
-                </div>
-            </div>
-            <div class="my-skills">
-                <div class="skill" data-aos="fade-in" data-aos-delay="300"> 
-                    <div class="icon-container">
-                         <i class="	fa fa-layer-group"></i>
-                    </div>
-                    <h1>APIS</h1>
-                    <p>Criação de APIs REST utilizando NodeJS + Express + MySQL | Mongo DB
-                        
-                    </p>
-                </div>
-                <div class="skill" data-aos="fade-in" data-aos-delay="600">
-                    <div class="icon-container">
-                        <i class="fas fa-store"></i>
-                    </div>
-                    <h1>E-Commerce</h1>
-                    <p>Criação de uma loja virtual para o seu negócio.
-                    </p>
-                    </div>
-            </div>
-        </div>
-    </section>
-    <section class="portfolio" id="portfolio">
-        <div class="container">
-            <div class="section-heading">
-                <h1>Portfólio</h1>
-                <h6>Um pouco dos meus trabalhos</h6>
-            </div>
-            <div class="portfolio-item">
-                <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
-                    <img src="img/port-item1.png" alt="">
-                </div>
-                <div class="portfolio-description" data-aos="fade-left" data-aos-delay="600">
-                    <h6>Back-end</h6>
-                    <h1>API REST para To do List</h1>
-                    <p>Desenvolvimento de uma API REST utilizando NodeJS para sistema web de gerenciamento de tarefas, <br>
-                        esse projeto tem como intuito aprimorar as tecnicas de desenvolvimento back end na web e criar<br>
-                        um facilitador para controle de tarefas diárias.<br></p>
-                    <a href="https://github.com/BrunoGRS/Gerenciador_de_Tarefas" class="cta" target="_blank">Ver detalhes</a>
-                </div>
-            </div>
-            <div class="portfolio-item">
-                <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
-                    <img src="img/port-item5.png" alt="">
-                </div>
-                <div class="portfolio-description" data-aos="fade-left" data-aos-delay="600">
-                    <h6>Back-end</h6>
-                    <h1>API REST para Controle de Estoque</h1>
-                    <p>Desenvolvimento de uma API REST utilizando Express para sistema de controle de estoque, <br>
-                        esse projeto tem como intuito aprimorar as tecnicas de desenvolvimento com API e banco de dados e criar<br>
-                        um facilitador para controle de produtos para pequenos negócios.
-                        Terá futuramente uma versão web para utilizar o gerenciador.<br></p>
-                    <a href="https://github.com/BrunoGRS/API_Controle_Estoque" class="cta" target="_blank">Ver detalhes</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="experience" id="experience">
-            <div class="container">
-                <div class="section-heading">
-                    <h1>Experiencia</h1>
-                    <h6>Algumas das tecnologias com quais tenho experiencia:</h6>
-                </div>
-                <div class="technologies">
-                    <li data-aos="fade-right" data-aos-delay="300">
-                        <h3>Node JS</h3><span class="skillbar"><span class="html"></span></span>
-                    </li>
-                    <li data-aos="fade-right" data-aos-delay="900">
-                        <h3>Express</h3><span class="skillbar"><span class="css"></span></span>
-                    </li>
-                    <li data-aos="fade-right" data-aos-delay="300">
-                        <h3>Python</h3><span class="skillbar"><span class="html"></span></span>
-                    </li>
-                    <li data-aos="fade-right" data-aos-delay="300">
-                        <h3>MySQL</h3><span class="skillbar"><span class="html"></span></span>
-                    </li>
-                </div>
-    </section>
-    <section class="contact" id="contact">
-            <div class="container">
-                <div class="section-heading">
-                    <h1>Contato</h1>
-                    <h6>Entre em contato comigo:</h6>
-                </div>
-                <form action="https://formspree.io/f/mrgnpgbb" method="POST">
-                    <label for="name">Nome:</label>
-                    <input type="text" id="name" name="name" placeholder="Insira seu nome" required>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="_replyto" placeholder="Insira seu email" required>
-                    <label for="service">Servicos:</label>
-                    <select name="services" id="service">
-                        <option value="websites">Criação de Sites</option>
-                        <option value="software">Softwares</option>
-                        <option value="api">APIs</option>
-                        <option value="ecommerce">E-Commerce</option>
-                    </select>
-                    <label for="subject">Assunto:</label>
-                    <textarea name="message" id="subject" cols="10" rows="10"></textarea>
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-    </section>
-    <footer class="copyright">
-        <div class="up" id="up">
-            <i class="fa fa-chevron-up"></i>
-        </div>
-        <p>&copy; 2024 Bruno Rodrigues</p>
 
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-glow" aria-hidden="true"></div>
+            <div class="container hero-container">
+                <div class="hero-badge" data-reveal>
+                    <span class="pulse-dot"></span>
+                    <span>Consultoria SaaS • Desenvolvimento • Educação TI</span>
+                </div>
+
+                <h1 class="hero-title" data-reveal>
+                    Estratégia, código e ensino para transformar <span class="text-gradient">operações digitais</span>.
+                </h1>
+
+                <p class="hero-subtitle" data-reveal>
+                    Sou <strong>Bruno Rodrigues</strong> — consultor de implantação de projetos SaaS, desenvolvedor web e professor de informática. Conecto arquitetura de software, experiência do cliente e capacitação técnica.
+                </p>
+
+                <div class="hero-actions" data-reveal>
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Iniciar conversa</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
+                    <a href="#portfolio" class="btn btn-secondary">Ver projetos</a>
+                </div>
+
+                <div class="hero-pillars" data-reveal>
+                    <div class="pillar-item">
+                        <span class="pillar-tag">01 / SaaS</span>
+                        <p>Implantação, onboarding e estruturação de processos</p>
+                    </div>
+                    <div class="pillar-item">
+                        <span class="pillar-tag">02 / DEV</span>
+                        <p>Sites modernos, APIs REST e sistemas sob medida</p>
+                    </div>
+                    <div class="pillar-item">
+                        <span class="pillar-tag">03 / ENSINO</span>
+                        <p>Aulas de informática, redes, lógica e programação</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about" id="about">
+            <div class="container about-grid">
+                <div class="about-media" data-reveal>
+                    <div class="profile-frame">
+                        <img src="img/profile.jpg" alt="Foto de Bruno Rodrigues" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="profile-fallback" style="display: none;">BR</div>
+                    </div>
+                    <div class="about-card-float">
+                        <span class="mono-label">Base & Formação</span>
+                        <strong>Chapecó, SC • Ciência da Computação</strong>
+                    </div>
+                </div>
+
+                <div class="about-content" data-reveal>
+                    <span class="section-eyebrow">Sobre Mim</span>
+                    <h2 class="section-title">Visão técnica aliada a processos e pessoas.</h2>
+                    <p class="about-text">
+                        Graduando em <strong>Ciência da Computação</strong>, atuo na interseção entre tecnologia, negócios e educação. Como <strong>Consultor de Projetos SaaS</strong>, conduzo implantações, desenho fluxos operacionais e garanto que empresas extraiam o máximo valor das ferramentas digitais desde o primeiro dia.
+                    </p>
+                    <p class="about-text">
+                        No <strong>desenvolvimento de software</strong>, construo aplicações web, landing pages de alta conversão e APIs robustas. Paralelamente, como <strong>professor de informática</strong>, compartilho conhecimento prático em programação, bancos de dados, redes e fundamentos computacionais de forma clara e aplicada.
+                    </p>
+
+                    <div class="about-links">
+                        <a href="https://github.com/BrunoGRS" target="_blank" rel="noopener noreferrer" class="social-pill">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                            <span>GitHub (@BrunoGRS)</span>
+                        </a>
+                        <a href="#contact" class="social-pill">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            <span>Agendar reunião</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="section services" id="services">
+            <div class="container">
+                <div class="section-header" data-reveal>
+                    <span class="section-eyebrow">Áreas de Atuação</span>
+                    <h2 class="section-title">Como posso ajudar seu projeto ou equipe</h2>
+                    <p class="section-subtitle">Soluções estruturadas que unem visão de negócio, arquitetura técnica e capacitação.</p>
+                </div>
+
+                <div class="services-grid">
+                    <article class="service-card" data-reveal>
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                        </div>
+                        <h3>Consultoria & Implantação SaaS</h3>
+                        <p>Mapeamento de processos, configuração de plataformas, automação de fluxos de atendimento e condução de onboarding focado em adoção e experiência do cliente.</p>
+                        <ul class="service-tags">
+                            <li>Onboarding & CX</li>
+                            <li>Fluxos & Processos</li>
+                            <li>Gestão de Implantação</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-card" data-reveal>
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                        </div>
+                        <h3>Sites & Landing Pages</h3>
+                        <p>Criação de sites institucionais e landing pages modernas, rápidas e responsivas, projetadas para fortalecer o posicionamento digital e converter visitantes.</p>
+                        <ul class="service-tags">
+                            <li>UI Responsiva</li>
+                            <li>Performance & SEO</li>
+                            <li>Alta Conversão</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-card" data-reveal>
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        </div>
+                        <h3>Sistemas Web & APIs REST</h3>
+                        <p>Desenvolvimento de aplicações sob medida, painéis administrativos, APIs RESTful e integrações entre sistemas para automatizar rotinas empresariais.</p>
+                        <ul class="service-tags">
+                            <li>Node.js & Express</li>
+                            <li>Integrações & Webhooks</li>
+                            <li>Bancos de Dados</li>
+                        </ul>
+                    </article>
+
+                    <article class="service-card" data-reveal>
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                        </div>
+                        <h3>Aulas & Mentoria em Informática</h3>
+                        <p>Aulas particulares e treinamentos personalizados em informática, lógica de programação, desenvolvimento web, redes de computadores e bancos de dados.</p>
+                        <ul class="service-tags">
+                            <li>Didática Prática</li>
+                            <li>Iniciante ao Avançado</li>
+                            <li>Treinamento Equipes</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="section portfolio" id="portfolio">
+            <div class="container">
+                <div class="section-header" data-reveal>
+                    <span class="section-eyebrow">Portfólio</span>
+                    <h2 class="section-title">Projetos em destaque</h2>
+                    <p class="section-subtitle">Exemplos de arquiteturas back-end, aplicações web e soluções desenvolvidas.</p>
+                </div>
+
+                <div class="portfolio-grid">
+                    <article class="project-card" data-reveal>
+                        <div class="project-media">
+                            <img src="img/port-item1.png" alt="API REST para Gerenciador de Tarefas" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="project-placeholder" style="display: none;">
+                                <span>REST API • Task Manager</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-meta">
+                                <span class="badge">Back-end</span>
+                                <span class="mono-text">Node.js • Express • REST</span>
+                            </div>
+                            <h3>API REST — Gerenciador de Tarefas</h3>
+                            <p>Arquitetura back-end completa para organização e controle de tarefas diárias, com rotas estruturadas, validações e persistência de dados.</p>
+                            <a href="https://github.com/BrunoGRS/Gerenciador_de_Tarefas" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <span>Explorar repositório</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-reveal>
+                        <div class="project-media">
+                            <img src="img/port-item5.png" alt="API REST para Controle de Estoque" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="project-placeholder" style="display: none;">
+                                <span>REST API • Inventory System</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-meta">
+                                <span class="badge">Back-end & Dados</span>
+                                <span class="mono-text">Node.js • Express • SQL</span>
+                            </div>
+                            <h3>API REST — Controle de Estoque</h3>
+                            <p>Sistema back-end voltado a pequenos negócios para gestão de produtos, movimentações de entrada/saída e integração com interfaces web.</p>
+                            <a href="https://github.com/BrunoGRS/API_Controle_Estoque" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <span>Explorar repositório</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-reveal>
+                        <div class="project-media">
+                            <div class="project-placeholder project-placeholder-accent">
+                                <span>SaaS • Dashboards & Fluxos</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-meta">
+                                <span class="badge">SaaS & Automação</span>
+                                <span class="mono-text">APIs • Dashboards • CX</span>
+                            </div>
+                            <h3>Ecossistemas SaaS & Indicadores</h3>
+                            <p>Estruturação de fluxos de atendimento omnichannel, integração via webhooks e painéis de acompanhamento de métricas de implantação.</p>
+                            <a href="#contact" class="project-link">
+                                <span>Solicitar demonstração</span>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stack & Competencies Section -->
+        <section class="section stack" id="stack">
+            <div class="container">
+                <div class="section-header" data-reveal>
+                    <span class="section-eyebrow">Stack & Metodologias</span>
+                    <h2 class="section-title">Tecnologias e competências</h2>
+                </div>
+
+                <div class="stack-grid">
+                    <div class="stack-card" data-reveal>
+                        <h3>Back-end & Integrações</h3>
+                        <div class="pill-group">
+                            <span class="tech-pill">Node.js</span>
+                            <span class="tech-pill">Express</span>
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">APIs REST</span>
+                            <span class="tech-pill">Webhooks</span>
+                        </div>
+                    </div>
+
+                    <div class="stack-card" data-reveal>
+                        <h3>Front-end & Web</h3>
+                        <div class="pill-group">
+                            <span class="tech-pill">HTML5 & CSS3</span>
+                            <span class="tech-pill">JavaScript (ES6+)</span>
+                            <span class="tech-pill">React</span>
+                            <span class="tech-pill">UI/UX Responsivo</span>
+                            <span class="tech-pill">Landing Pages</span>
+                        </div>
+                    </div>
+
+                    <div class="stack-card" data-reveal>
+                        <h3>Dados & Infraestrutura</h3>
+                        <div class="pill-group">
+                            <span class="tech-pill">MySQL</span>
+                            <span class="tech-pill">PostgreSQL</span>
+                            <span class="tech-pill">MongoDB</span>
+                            <span class="tech-pill">Git & GitHub</span>
+                            <span class="tech-pill">Linux & Redes</span>
+                        </div>
+                    </div>
+
+                    <div class="stack-card" data-reveal>
+                        <h3>Consultoria & Educação</h3>
+                        <div class="pill-group">
+                            <span class="tech-pill">Implantação SaaS</span>
+                            <span class="tech-pill">Customer Experience</span>
+                            <span class="tech-pill">Mapeamento de Fluxos</span>
+                            <span class="tech-pill">Didática & Mentoria</span>
+                            <span class="tech-pill">Documentação Técnica</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact" id="contact">
+            <div class="container contact-grid">
+                <div class="contact-info" data-reveal>
+                    <span class="section-eyebrow">Contato</span>
+                    <h2 class="section-title">Vamos tirar sua ideia ou projeto do papel?</h2>
+                    <p class="contact-text">
+                        Seja para estruturar a implantação de um projeto SaaS, desenvolver um site ou sistema sob medida, ou agendar aulas e treinamentos em informática, envie uma mensagem.
+                    </p>
+
+                    <div class="contact-highlights">
+                        <div class="highlight-row">
+                            <span class="highlight-label">Atendimento</span>
+                            <span>Remoto para todo o Brasil & Presencial em Chapecó-SC</span>
+                        </div>
+                        <div class="highlight-row">
+                            <span class="highlight-label">Tempo de resposta</span>
+                            <span>Retorno em até 24 horas úteis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper" data-reveal>
+                    <form id="contactForm" action="https://formspree.io/f/mrgnpgbb" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nome completo</label>
+                            <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="_replyto" placeholder="voce@empresa.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Assunto principal</label>
+                            <select name="services" id="service">
+                                <option value="consultoria-saas">Consultoria / Implantação SaaS</option>
+                                <option value="websites">Criação de Site / Landing Page</option>
+                                <option value="software-api">Desenvolvimento de Sistema / API</option>
+                                <option value="aulas-informatica">Aulas / Treinamento em Informática</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Detalhes do projeto ou dúvida</label>
+                            <textarea name="message" id="subject" rows="4" placeholder="Conte brevemente sobre sua necessidade..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                            <span>Enviar mensagem</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        </button>
+
+                        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <span class="brand-dot"></span>
+                <span>Bruno Rodrigues</span>
+            </div>
+            <p class="footer-copy">&copy; <span id="currentYear">2026</span> Bruno Rodrigues. Todos os direitos reservados.</p>
+            <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+            </button>
+        </div>
     </footer>
-    <script src="main.js" type="text/javascript"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
